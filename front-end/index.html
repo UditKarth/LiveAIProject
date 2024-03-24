@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CryptoMarket - Decentralized Marketplace on Etherem Blockchain</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">CryptoMarket</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="manageProducts.html">Manage Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/alessandro308/CryptoMarket">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://apagiaro.it">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+
+          <h1 class="my-4">CryptoMarket</h1>
+          
+          <div class="card" style="">
+            <div class="card-body">
+              <h5 class="card-title">Your account</h5>
+              <p class="card-text" id="account_text">Hi! This is your account!</p>
+              <p><b>Your balance:</b>
+            </p>
+              <button id="balance" class="btn btn-static">Ether </button>
+              
+            </div>
+          </div>
+          <br/>
+          <div class="card" style="">
+            <div class="card-body" id="orders">
+              <h5 class="card-title">Your orders</h5>
+              //TODO
+            </div>
+          </div>
+
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="row my-4" id="row1" >
+
+          </div>
+          <!-- /.row -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Alessandro Pagiaro 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div class="modal fade" id="productModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="product_title">Product Title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="modal-body">
+            <p id="product_description"></p>
+            <p>Price: <span id="product_price"></span> ETHER</p>
+            <p id="product_quantity"></p>
+            <p id="product_seller"></p>
+            <p>Product Id: <spam id="product_id"></spam></p>
+            <hr>
+            <div class="form-group">
+              <label for="shippingAddress">Shipping Address:</label>
+              <input type="text" class="form-control" id="shippingAddress" placeholder="Insert here a real address to receive your product">
+            </div>
+            <div class="form-group">
+              <label for="shippingAddress">Quantity:</label>
+              <input type="text" class="form-control" id="quantity" placeholder="How many item?">
+            </div>
+            <p>Total: <span id="total"></span> wei</p><button type="button" class="btn btn-primary" id="buyProductBtn">Buy it!</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Product Detail Modal -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/web3.js"></script>
+    <script src="js/contract.js"></script>
+    <script src="js/ethereum.js"></script>
+  </body>
+
+</html>
